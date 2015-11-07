@@ -27,7 +27,7 @@ def run():
         time_passed = clock.tick()
         t += time_passed / 3000.
 
-        for n in xrange(DOTS):
+        for n in range(DOTS):
             a = float(n)/DOTS * sin((t)*.1234)*100
             x = sin((t+a)*sin(t/4)) * 200.*sin(t/5) + 320
             y = cos(((t*1.234)+a)*sin(t/8)) * 200.*sin(t/4) + 220
