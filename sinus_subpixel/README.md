@@ -1,3 +1,7 @@
 variation of w. mc gugan code
 
-TODO: add live parameters // MIDI // OSC
+![alt tag](http://ticho.multiplace.org/pic/sinus_subpixel/sinus_variations_02.png)
+
+TODO: - add live parameters 
+      - MIDI / OSC
+      - send dot position
