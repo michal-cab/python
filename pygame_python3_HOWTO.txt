@@ -1,0 +1,13 @@
+sudo apt-get install mercurial
+hg clone https://bitbucket.org/pygame/pygame
+
+sudo apt-get build-dep pygame
+sudo apt-get install python3-dev
+sudo apt-get install python3-numpy
+
+cd pygame
+python3 config.py
+
+python3 setup.py build
+sudo python3 setup.py install
+
