@@ -1,4 +1,4 @@
-sinus subpixel - interactive visual tool  :wq
+<h1>sinus subpixel - interactive visual tool</h1>  
 
 ![alt tag](http://ticho.multiplace.org/pic/sinus_subpixel/sinus_variations_02.png)
 
