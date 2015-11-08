@@ -1,0 +1,67 @@
+#N canvas 567 252 273 331 10;
+#N canvas 126 388 552 368 gui 0;
+#X obj -130 63 dumpOSC 8000;
+#X obj -91 450 dac~;
+#X obj -130 93 route /x;
+#X obj -130 117 unpack f f f;
+#X obj -130 187 phasor~;
+#X obj -97 238 phasor~;
+#X obj -63 312 phasor~;
+#X obj -131 381 rev3~ 100 90 3000 20;
+#X obj -96 215 / 10;
+#X obj -92 427 dist~;
+#X obj -130 162 * 0.2;
+#X obj -62 287 *~ 5;
+#X obj -103 139 r \$0-f1;
+#X obj -75 194 r \$0-f2;
+#X obj -41 268 r \$0-f3;
+#X obj -85 333 r \$0-v1;
+#X obj -61 355 r \$0-v2;
+#X obj -65 403 r \$0-v3;
+#X obj 101 101 cnv 15 130 180 empty empty void_synth-michal_cab 2 170
+0 10 -233017 -66577 0;
+#X obj 104 105 vsl 15 128 0 1 0 0 \$0-f1 x f1 2 10 0 10 -262144 -1
+-1 12700 1;
+#X obj 125 105 vsl 15 128 1 100 0 0 \$0-f2 x f2 2 10 0 10 -262144 -1
+-1 0 1;
+#X obj 146 105 vsl 15 128 0 1000 0 0 \$0-f3 x f3 2 10 0 10 -262144
+-1 -1 12700 1;
+#X obj 168 105 vsl 15 128 90 120 0 0 \$0-v1 x v1 2 10 0 10 -262144
+-1 -1 5900 1;
+#X obj 191 105 vsl 15 128 90 120 0 0 \$0-v2 x v2 2 10 0 10 -262144
+-1 -1 1900 1;
+#X obj 213 105 vsl 15 128 1 100 0 0 \$0-v3 x v3 2 10 0 10 -262144 -1
+-1 0 1;
+#X text -46 70 reading data from;
+#X text -45 82 sinus_supbixel.py;
+#X text -42 136 please dont read;
+#X text -43 148 this code;
+#X text -42 159 it is mess;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 10 0;
+#X connect 3 1 8 0;
+#X connect 3 2 11 0;
+#X connect 4 0 7 1;
+#X connect 4 0 7 0;
+#X connect 5 0 7 1;
+#X connect 5 0 7 0;
+#X connect 6 0 7 1;
+#X connect 6 0 7 0;
+#X connect 7 1 9 0;
+#X connect 7 3 1 1;
+#X connect 8 0 5 0;
+#X connect 9 0 1 0;
+#X connect 10 0 4 0;
+#X connect 11 0 6 0;
+#X connect 12 0 10 1;
+#X connect 13 0 8 1;
+#X connect 14 0 11 1;
+#X connect 15 0 7 2;
+#X connect 16 0 7 3;
+#X connect 17 0 9 1;
+#X coords 0 -1 40 1 132 182 2 100 100;
+#X restore 23 40 pd gui;
+#X text 22 253 sinus_supbixel.py;
+#X text 22 241 void synth for;
+#X text 22 272 8.11.2015 / michal cab / tokio;

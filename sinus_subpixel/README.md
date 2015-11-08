@@ -4,6 +4,14 @@
 
 ---------------------------------------------
 
+run python3 sinus_subpixel.py
+
+run pd-extended void_synth.py
+
+play sinus_subpixel.py && void_synth => VOID()
+
+---------------------------------------------
+
 keys:  
 LEFT ARROW, RIGHT ARROW = speed  
 UP ARROW, DOWN ARROW = amount of particles  
@@ -19,4 +27,4 @@ TODO:
 
 ---------------------------------------------
 
-original code: w. mc gugan  
+code inspired by: w. mc gugan  
